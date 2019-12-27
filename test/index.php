@@ -12,4 +12,4 @@ $email->sendEmail("SUbject", "Content", "reply@email.com", "Replay Name", "addre
 
 
 
-// var_dump($novoEmail);
+var_dump($novoEmail);
