@@ -5,8 +5,11 @@ require __DIR__."/../lib_ext/autoload.php";
 USE Notification\Email;
 
 
-$novoEmail = new Email(2, "smtp.office365.com", "leoprofissional@live.com", "8804@profile","STARTTLS",587,"leoprofissional@live.com", "Nome do destinátario");
-$novoEmail->sendMail("Assunto de Teste", "<p>Esse é um email de <b>TESTE</b>!</p>", "leo@agilsystem.com.br", "Leonardo",  "leo@agilsystem.com.br", "Leonardo");
+$email = new Email(2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls / ssl)", "port (587)","from@email.com", "From Name");
+
+$email->sendEmail("SUbject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
+
+
 
 
 // var_dump($novoEmail);
